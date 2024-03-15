@@ -1,0 +1,138 @@
+.contenedor {
+    display: grid;
+    background-color: red;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  .caja {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .caja1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    border: black 5px solid;
+  }
+
+  .caja2 {
+    grid-column: 1 ;
+    grid-row: 2;
+    width: 600px;
+    border: black 5px solid;
+  }
+
+  .caja3 {
+    grid-column: 2;
+    grid-row: 2;
+    border: black 5px solid;
+  }
+
+  .caja4 {
+    grid-column: 3;
+    grid-row: 2;
+    border: black 5px solid;
+  }
+
+  .caja5 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    border: black 5px solid;
+  }
+
+  .caja6 {
+    grid-column: 3;
+    grid-row: 3;
+    border: black 5px solid;
+    
+  }
+  
+  .container {
+    background-color: red;
+    display: grid;
+    grid-template-rows: 20px 60px 60px;
+    grid-template-columns: 2fr 1fr 1fr 8fr 2fr;
+    grid-gap: 4px;
+    grid-template-areas:
+    "area1 area1 area1 area1 area1"
+    "area2 area2 . area3 area3"
+    "area2 area2 area4 area4 area4";
+    
+  }
+
+
+
+  .caja7 {
+    background: green;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area2;
+   
+  }
+  
+  .caja8 {
+    background: green;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area3;
+    
+  }
+  .caja9 {
+    background: green;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area4;
+
+  }
+
+
+
+  .conter {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+.box {
+    width: 30%;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: blue;
+}
+.box:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.rectangle {
+    width: 100px;
+    height: 50px;
+    background-color:aqua;
+    margin-bottom: 10px;
+}
+.small-box {
+    
+    width: 45%;
+    height: 50px;
+    background-color:aqua;
+    margin-left: 5%;
+    
+}
+.small-box1 {
+    
+    width: 80px;
+    height: 50px;
+    background-color:green;
+    margin-left: 5%;
+
+}
+.final
+{
+    background-color: red;
+}
